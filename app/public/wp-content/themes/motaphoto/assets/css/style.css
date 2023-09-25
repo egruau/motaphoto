@@ -120,6 +120,99 @@ body {
   font-weight: 700;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 5px solid black;
+  width: 597px;
+  height: 769px;
+  padding-top: 18px;
+}
+@media screen and (max-width: 768px) {
+  .modal__content {
+    width: 286px;
+    height: 650px;
+  }
+}
+.modal__content__header {
+  width: 100%;
+}
+.modal__content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+.modal__content__form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #313144;
+  margin-bottom: 24px;
+}
+.modal__content__form__label textarea {
+  resize: none;
+  height: 210px;
+}
+@media screen and (max-width: 768px) {
+  .modal__content__form__label textarea {
+    height: 149px;
+  }
+}
+.modal__content__form__label__input {
+  border-radius: 8px;
+  border: 1px solid #B8BBC2;
+  min-height: 40px;
+  max-width: 263px;
+  min-width: 190px;
+  width: 20vw;
+}
+.modal__content__form__submit {
+  height: 50px;
+  max-width: 263px;
+  max-width: 263px;
+  min-width: 190px;
+  width: 20vw;
+  border-radius: 2px;
+  border: none;
+  background-color: #D8D8D8;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  margin: initial;
+  border-color: #dc3232;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #dc3232;
+}
+
+.wpcf7-not-valid-tip {
+  text-transform: initial;
+}
+
 .header {
   height: 80px;
   display: flex;
@@ -237,6 +330,10 @@ body {
   .header__burger__icone {
     display: none;
   }
+}
+
+.contactLink {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

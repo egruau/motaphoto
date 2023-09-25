@@ -3,7 +3,7 @@
 function enqueue_custom_styles() {
     wp_enqueue_style('motaphoto', get_stylesheet_uri());
 	wp_enqueue_style('allstyle', get_template_directory_uri() . '/assets/css/style.css');
-	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js');
+	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
@@ -35,4 +35,17 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 
-?>
+// Ajout barre d'administration wordpress//
+function custom_toolbar() {
+	if (is_admin_bar_showing()) {
+	  return;
+	}
+	add_filter('show_admin_bar', '__return_true');
+  }
+  add_action('wp_head', 'custom_toolbar');
+
+// Action qui empeche le plugin "Contact Form 7" d'ajouter automatiquement des balises paragraphes supplémentaires. //
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+    return false;
+} 

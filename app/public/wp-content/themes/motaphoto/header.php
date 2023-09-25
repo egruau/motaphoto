@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 
 <head>
-       <meta charset="utf-8" />
+<meta charset="<?php bloginfo( 'charset' ); ?>">
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <title>Nathalie Mota</title>
        <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+    
+    <?php wp_body_open(); ?>
        <header class="header">
               <div class="header__logo" </div> <?php if ( function_exists( 'the_custom_logo' ) ) {
               the_custom_logo(); } ?> </div> 
@@ -45,3 +47,5 @@
                      ?>
               </nav>
        </header>
+
+       <main>

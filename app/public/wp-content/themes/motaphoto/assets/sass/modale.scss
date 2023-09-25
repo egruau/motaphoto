@@ -1,0 +1,89 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 5px solid black;
+    width: 597px;
+    height: 769px;
+    padding-top: 18px;
+    @media screen and (max-width: 768px) {
+        width: 286px;
+        height: 650px;
+    }
+    &__header {
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45px;
+    }
+    &__form {
+        &__label {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            color: #313144;
+            margin-bottom: 24px;
+            textarea {
+                resize: none;
+                height: 210px;
+                @media screen and (max-width: 768px) {
+                    height: 149px;
+                }
+            }
+            &__input {
+                border-radius: 8px;
+                border: 1px solid #B8BBC2;
+                min-height: 40px;
+                max-width: 263px;
+                min-width: 190px;
+                width: 20vw;
+            }
+        }
+        &__submit {
+        height: 50px;
+        max-width: 263px;
+        max-width: 263px;
+        min-width: 190px;
+        width: 20vw;
+        border-radius: 2px;
+        border: none;
+        background-color: #D8D8D8;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Space Mono', monospace;
+        }
+    }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    margin: initial;
+    border-color: #dc3232;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #dc3232;
+}
+.wpcf7-not-valid-tip {
+    text-transform: initial;
+}
+

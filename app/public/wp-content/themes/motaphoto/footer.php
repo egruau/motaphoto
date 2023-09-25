@@ -1,4 +1,7 @@
+
+</main>
 <footer class="footer">
+   <?php get_template_part('templates-parts/modale', 'contact'); ?>
     <?php
  if ( has_nav_menu( 'footer-menu' ) ) : ?>
     <?php 
@@ -10,6 +13,7 @@
     <?php endif;
  ?>
 </footer>
+<?php wp_footer(); ?>
 </body>
 
 </html>
