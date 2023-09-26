@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 146px;
-  box-shadow: 0px 4px 14px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
 }
 @media screen and (max-width: 1024px) {
   .header {
@@ -31,20 +31,45 @@
   }
 }
 
-.header__nav__icone__closed {
+.header__burger {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.header__nav__mobile {
   display: none;
 }
 @media screen and (max-width: 1024px) {
   .header__nav {
     position: fixed;
-    top: 80px;
-    display: none;
+    z-index: 3;
+    top: 0;
+    transform: translate(150%);
+    background-color: initial;
   }
   .header__nav__open {
     display: block;
+    animation: burgermenuopen 300ms ease-in-out both;
   }
-}
-@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .header__nav__closed {
+    animation: burgermenuclosed 300ms ease-in-out both;
+  }
+  .header__nav__mobile {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
+  }
   .header__nav__icone__closed {
     display: flex;
     position: fixed;
@@ -60,6 +85,9 @@
   list-style: none;
   display: flex;
   align-items: center;
+}
+.header__nav__menu .contactLink {
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .header__nav__menu {
@@ -101,24 +129,73 @@
   }
 }
 
-.header__burger {
-  display: none;
+.overlay-animation {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  top: 30px;
-  right: 40px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: overlay 150ms ease-in-out both;
 }
-@media screen and (max-width: 1024px) {
-  .header__burger {
-    display: block;
-    cursor: pointer;
-  }
-  .header__burger__icone {
-    display: none;
-  }
+.overlay-animation__closed {
+  animation: overlayReverse 300ms linear both;
 }
 
-.contactLink {
-  cursor: pointer;
+.opacity-animation {
+  animation: opacity 150ms ease-in-out both;
+}
+.opacity-animation__closed {
+  animation: opacityReverse 300ms linear both;
+}
+
+@keyframes burgermenuopen {
+  0% {
+    transform: translate(150%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes burgermenuclosed {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(150%);
+  }
+}
+@keyframes overlay {
+  0% {
+    background-color: initial;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+@keyframes overlayReverse {
+  0% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    background-color: initial;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacityReverse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -108,3 +108,4 @@ Stack trace:
 [21-Sep-2023 19:26:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
 [21-Sep-2023 19:26:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
 [21-Sep-2023 19:53:55 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[26-Sep-2023 09:56:13 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
