@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-06 07:00:24+0000\n"
+"PO-Revision-Date: 2023-09-25 10:13:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -111,7 +111,7 @@ msgstr "Ce champ a un numéro trop long."
 
 #: modules/number.php:186
 msgid "This field has a too small number."
-msgstr "Ce champ à un numéro trop court."
+msgstr "Le chiffre de ce champ est trop petit."
 
 #: modules/number.php:181
 msgid "Please enter a number."
@@ -119,11 +119,11 @@ msgstr "Veuillez saisir un numéro."
 
 #: modules/date.php:172
 msgid "This field has a too late date."
-msgstr "Ce champ à une date trop tardive."
+msgstr "La date de ce champ est trop tardive."
 
 #: modules/date.php:167
 msgid "This field has a too early date."
-msgstr "Ce champ à une date trop tôt."
+msgstr "La date de ce champ est trop tôt."
 
 #: modules/date.php:162
 msgid "Please enter a date in YYYY-MM-DD format."
@@ -144,11 +144,11 @@ msgstr "Le fichier téléversé est trop volumineux."
 
 #: includes/contact-form-template.php:215
 msgid "This field has a too short input."
-msgstr "Ce champ à un numéro trop court."
+msgstr "Ce champ a une saisie trop courte."
 
 #: includes/contact-form-template.php:208
 msgid "This field has a too long input."
-msgstr "Ce champ à une date trop tardive."
+msgstr "Ce champ a une saisie trop longue."
 
 #: includes/contact-form-template.php:201
 msgid "Please fill out this field."

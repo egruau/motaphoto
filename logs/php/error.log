@@ -109,3 +109,31 @@ Stack trace:
 [21-Sep-2023 19:26:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
 [21-Sep-2023 19:53:55 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [26-Sep-2023 09:56:13 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[27-Sep-2023 17:24:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php:36
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php on line 36
+[27-Sep-2023 17:24:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php:36
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php on line 36
+[27-Sep-2023 17:45:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php:36
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php on line 36
+[27-Sep-2023 17:55:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php:36
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single.php on line 36
