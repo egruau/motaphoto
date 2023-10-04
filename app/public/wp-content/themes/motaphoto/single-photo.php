@@ -50,7 +50,42 @@ get_header();
             </button>
         </div>
         <div class="single-post-content__footer__nav">
-            Navigation 
+            <div class="thumbnail">
+                <?php 
+                    $previous_post = get_previous_post();
+                    $next_post = get_next_post();
+
+                    if (!empty($previous_post)) {
+                            $previous_thumbnail = get_the_post_thumbnail($previous_post, 'thumbnail', array('class' => 'previous-thumbnail'));
+                            if (!empty($previous_thumbnail)) {
+                                echo $previous_thumbnail;
+                            }
+                    }
+
+                    if (!empty($next_post)) { 
+                            $next_thumbnail = get_the_post_thumbnail($next_post, 'thumbnail', array('class' => 'next-thumbnail'));
+                            if (!empty($next_thumbnail)) {
+                                echo $next_thumbnail;
+                            }
+                    }
+                ?>
+            </div>
+            <div class="arrow-nav">
+                <?php 
+                if (!empty($previous_post)) {
+                    echo '<a href="' . get_permalink($previous_post) . '" class="nav-icon-link previous-icon-link">' .
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="8" viewBox="0 0 26 8" fill="none">' .
+                    '<path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H26V3.5H1V4.5Z" fill="black"/>' .
+                    '</svg></a>';
+                }
+                if (!empty($next_post)) { 
+                    echo '<a href="' . get_permalink($next_post) . '" class="nav-icon-link next-icon-link">' .
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="8" viewBox="0 0 26 8" fill="none">' .
+                    '<path d="M25.3536 3.64645C25.5488 3.84171 25.5488 4.15829 25.3536 4.35355L22.1716 7.53553C21.9763 7.7308 21.6597 7.7308 21.4645 7.53553C21.2692 7.34027 21.2692 7.02369 21.4645 6.82843L24.2929 4L21.4645 1.17157C21.2692 0.976311 21.2692 0.659728 21.4645 0.464466C21.6597 0.269204 21.9763 0.269204 22.1716 0.464466L25.3536 3.64645ZM25 4.5H0V3.5H25V4.5Z" fill="black"/>                        ' .
+                    '</svg></a>';
+                }
+                ?>
+            </div>
         </div>
     </div>
 </div>

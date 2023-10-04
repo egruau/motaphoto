@@ -56,3 +56,27 @@ window.onclick = function(event) {
   }
 }
 
+$(document).ready(function() {
+  let previousArrow = $('.previous-icon-link');
+  let nextArrow = $('.next-icon-link');
+  let previousThumbnail = $('.previous-thumbnail');
+  let nextThumbnail = $('.next-thumbnail');
+
+  previousArrow.hover (
+    function() {
+      previousThumbnail.addClass('show-thumbnail');
+    },
+    function() {
+      previousThumbnail.removeClass('show-thumbnail'); // Correction ici
+    }
+  );
+
+  nextArrow.hover (
+    function() {
+      nextThumbnail.addClass('show-thumbnail');
+    },
+    function() {
+      nextThumbnail.removeClass('show-thumbnail'); // Correction ici
+    }
+  );
+});
