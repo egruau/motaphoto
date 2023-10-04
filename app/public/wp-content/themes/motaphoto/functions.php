@@ -1,12 +1,13 @@
 <?php 
 
+// Ajout feuilles de styles et scripts //
 function enqueue_custom_styles() {
     wp_enqueue_style('motaphoto', get_stylesheet_uri());
 	wp_enqueue_style('allstyle', get_template_directory_uri() . '/assets/css/style.css');
-	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0', true);
+	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0', true);
 }
-
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
 
 // Action qui permet de rajouter un logo personnalisé au site //
 add_theme_support( 'custom-logo' ); 

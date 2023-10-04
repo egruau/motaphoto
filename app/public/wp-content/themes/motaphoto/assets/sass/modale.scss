@@ -59,20 +59,6 @@
                 width: 20vw;
             }
         }
-        &__submit {
-        height: 50px;
-        max-width: 263px;
-        max-width: 263px;
-        min-width: 190px;
-        width: 20vw;
-        border-radius: 2px;
-        border: none;
-        background-color: #D8D8D8;
-        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
-        font-size: 12px;
-        font-weight: 400;
-        font-family: 'Space Mono', monospace;
-        }
     }
 }
 
@@ -87,3 +73,18 @@
     text-transform: initial;
 }
 
+.submit-button {
+            height: 50px;
+        max-width: 263px;
+        max-width: 263px;
+        min-width: 190px;
+        width: 20vw;
+        border-radius: 2px;
+        border: none;
+        background-color: #D8D8D8;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+}

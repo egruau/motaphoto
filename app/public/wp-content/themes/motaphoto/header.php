@@ -5,6 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
        <meta name="viewport" content="width=device-width, initial-scale=1" />
        <title>Nathalie Mota</title>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
        <?php wp_head(); ?>
 </head>
 

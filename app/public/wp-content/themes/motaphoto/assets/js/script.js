@@ -39,8 +39,20 @@ btnContact.onclick = function() {
   modal.style.display = "block";
 }
 
+let btnContactPhoto = $('.single-post-content__footer__contact__button');
+console.log(btnContactPhoto);
+btnContactPhoto.click(function() {
+  $(document).ready(function() {
+    $("#form__ref-photo").val($('#reference-photo').text())
+  })
+
+  // Afficher la modal
+  $('.modal').css('display', 'block');
+});
+
 window.onclick = function(event) {
   if (event.target == modal) {
       modal.style.display = "none";
   }
 }
+

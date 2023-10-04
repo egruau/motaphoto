@@ -12,6 +12,13 @@ body {
     font-family: $primaryFont;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+    font-family: $secondFont;
+}
+
+
 .footer {
     border-top: 1px solid black;
     height: 48px;
@@ -59,7 +66,3 @@ body {
         }
     }
 }
-
-// input[type="submit"] {
-//     all: initial;
-// }
