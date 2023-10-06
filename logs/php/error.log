@@ -159,3 +159,138 @@ Stack trace:
 #2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
 #3 {main}
   thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 22
+[05-Oct-2023 22:08:42 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php:92
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 92
+[05-Oct-2023 23:14:37 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(122): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:15:29 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:15:43 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:16:14 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:16:16 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:16:17 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:16:22 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:17:11 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:17:38 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:18:01 UTC] PHP Fatal error:  Uncaught TypeError: strip_tags(): Argument #1 ($string) must be of type string, WP_Error given in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php:34
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php(34): strip_tags(Object(WP_Error))
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(787): require('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template.php(720): load_template('C:\\Users\\gruau\\...', false, Array)
+#3 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php(120): get_template_part('/templates-part...')
+#5 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\gruau\\...')
+#6 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#7 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#8 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\templates-parts\photo_block.php on line 34
+[05-Oct-2023 23:36:17 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php:120
+Stack trace:
+#0 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-blog-header.php(19): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#3 {main}
+  thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 120
+[05-Oct-2023 23:45:38 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 26

@@ -31,14 +31,14 @@ document.addEventListener('wpcf7submit', function(event) {
   modal.style.height = '900px';
 }, false);
 
-// Get the modal
+// Recuperer la modale
   let modal = document.querySelector('.modal');
 
 let btnContact = document.querySelector('.contactLink');
 btnContact.onclick = function() {
   modal.style.display = "block";
 }
-
+// Intégrer la référence photo //
 let btnContactPhoto = $('.single-post-content__footer__contact__button');
 console.log(btnContactPhoto);
 btnContactPhoto.click(function() {
@@ -46,7 +46,7 @@ btnContactPhoto.click(function() {
     $("#form__ref-photo").val($('#reference-photo').text())
   })
 
-  // Afficher la modal
+  // Afficher la modale
   $('.modal').css('display', 'block');
 });
 
@@ -56,6 +56,8 @@ window.onclick = function(event) {
   }
 }
 
+
+// NAVIGATION HOVER SINGLE PAGE //
 $(document).ready(function() {
   let previousArrow = $('.previous-icon-link');
   let nextArrow = $('.next-icon-link');
@@ -67,7 +69,7 @@ $(document).ready(function() {
       previousThumbnail.addClass('show-thumbnail');
     },
     function() {
-      previousThumbnail.removeClass('show-thumbnail'); // Correction ici
+      previousThumbnail.removeClass('show-thumbnail'); 
     }
   );
 
@@ -76,7 +78,7 @@ $(document).ready(function() {
       nextThumbnail.addClass('show-thumbnail');
     },
     function() {
-      nextThumbnail.removeClass('show-thumbnail'); // Correction ici
+      nextThumbnail.removeClass('show-thumbnail'); 
     }
   );
 });

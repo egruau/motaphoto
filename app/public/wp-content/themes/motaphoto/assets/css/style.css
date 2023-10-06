@@ -64,10 +64,32 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+h1 {
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 p {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .footer {
@@ -431,9 +453,6 @@ p {
 
 .single-post-content__photo {
   display: flex;
-  justify-content: space-between;
-  gap: 22px;
-  height: calc(100% - 118px);
 }
 @media screen and (max-width: 1024px) {
   .single-post-content__photo {
@@ -446,25 +465,23 @@ p {
   flex: 1;
   flex-direction: column;
   justify-content: end;
-  text-transform: uppercase;
   border-bottom: 1px solid black;
   gap: 20px;
   padding-bottom: 37px;
 }
-.single-post-content__photo__infos__title {
-  font-size: 66px;
-  font-style: italic;
-  line-height: 87.879%;
+.single-post-content__photo__infos__txt {
   font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace;
 }
 .single-post-content__photo__picture {
   flex: 1;
   align-self: end;
 }
 .single-post-content__photo__picture img {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
+  max-height: calc(100vh - 120px);
 }
 
 .single-post-content__footer {
@@ -487,6 +504,27 @@ p {
   align-items: end;
   height: 100%;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.single-post-content__related-post {
+  display: flex;
+  flex-direction: column;
+}
+.single-post-content__related-post__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 50px 0;
+}
+.single-post-content__related-post__content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.single-post-content__related-post__button {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -515,6 +553,77 @@ p {
 
 .show-thumbnail {
   display: block;
+}
+
+.photo-block-container {
+  position: relative;
+  width: 100%;
+  max-width: 564px;
+  overflow: hidden;
+}
+.photo-block-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.photo-block-container .photo-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.photo-block-container .photo-block__picture {
+  width: 100%;
+  height: 100%;
+}
+.photo-block-container .photo-block__picture__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.photo-block:hover .photo-block__hover {
+  opacity: 1;
+}
+
+.photo-block__hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.photo-block__hover__fullscreen {
+  padding-top: 12px;
+  padding-right: 18px;
+}
+.photo-block__hover__view {
+  margin: auto;
+  display: inline-block;
+}
+.photo-block__hover__infos {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  width: 100%;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.photo-block__hover__infos__ref {
+  padding-left: 15px;
+}
+.photo-block__hover__infos__categorie {
+  padding-right: 18px;
+}
+.photo-block__hover__infos p {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 1.4px;
 }
 
 /*# sourceMappingURL=style.css.map */
