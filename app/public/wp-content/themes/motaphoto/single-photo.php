@@ -21,7 +21,6 @@ get_header();
                 <h2 class="single-post-content__photo__infos__title"> <?php the_title()?></h2>
                 <p class="single-post-content__photo__infos__txt"> référence : <span id="reference-photo"><?php echo get_field('reference'); ?></span></p>
                 <p class="single-post-content__photo__infos__txt"> catégorie : <?php
-                        $categories = get_the_terms(get_the_ID(), 'categorie');
                         $categories = get_the_terms(get_the_ID(), 'categories');
                         if ($categories) {
                             foreach ($categories as $category) {

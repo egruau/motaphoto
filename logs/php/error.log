@@ -294,3 +294,6 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 120
 [05-Oct-2023 23:45:38 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 26
+[11-Oct-2023 00:19:22 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[11-Oct-2023 00:25:27 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 28
+[11-Oct-2023 00:25:27 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\single-photo.php on line 28

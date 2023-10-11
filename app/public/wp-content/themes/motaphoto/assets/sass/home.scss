@@ -1,90 +1,16 @@
-$primaryFont:'Space Mono', monospace;
-$secondFont: 'Poppins', sans-serif;
-
-html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: $primaryFont;
-}
-
-h1 {
-    font-size: 96px;
-    font-style: italic;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 66px;
-    font-style: italic;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-    font-family: $secondFont;
-    font-weight: 300;
-    font-size: 14px;
-}
-
-
-.footer {
-    border-top: 1px solid black;
-    height: 48px;
+.home-hero {
     display: flex;
-    justify-content: center;
     align-items: center;
-    @media screen and (max-width: 1024px) {
-        height: auto;
-        padding: 48px 0;
+    justify-content: center;
+    &__title {
+        color: transparent;
+        -webkit-text-stroke: 3px #ffff;
     }
-} 
-
-.footer__nav {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-    @media screen and (max-width: 1024px) {
-        flex-direction: column;
-        align-items: center;
-    }
-    li {
-        padding: 0;
-        margin-right: 86px;
-        @media screen and (max-width: 1024px) {
-            margin-right: initial;
-            margin-bottom: 24px;
-        }
-        &:last-of-type {
-            margin-right: initial;
-            @media screen and (max-width: 1024px) {
-                margin-bottom: initial;
-            }
-        }
-        a {
-            font-size: 16px;
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            font-weight: 400;
-            line-height: normal;
-            &:hover {
-                font-weight: 700;
-            }
-        }
-    }
+}
+.hero-background {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
