@@ -34,6 +34,7 @@
 
 .photo-block__hover {
     opacity: 0;
+    transition: opacity 0.4s;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +54,7 @@
         display: inline-block;
     }
     &__infos {
-        color: white;
+        color: white; 
         display: flex;
         justify-content: space-between;
         margin: 0px;

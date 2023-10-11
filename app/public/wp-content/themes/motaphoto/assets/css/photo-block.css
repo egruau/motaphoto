@@ -30,6 +30,7 @@
 
 .photo-block__hover {
   opacity: 0;
+  transition: opacity 0.4s;
   position: absolute;
   top: 0;
   left: 0;
