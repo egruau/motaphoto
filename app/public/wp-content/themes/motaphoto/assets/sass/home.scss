@@ -1,4 +1,5 @@
-.home-hero {
+// HERO // 
+.home__hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,4 +14,39 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+// TRI ET FILTRES // 
+.home__selection {
+    margin: 80px 146px 39px 146px;
+    display: flex;
+    justify-content: space-between;
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+        width: calc(50% - 20px);
+    }
+}
+
+.filter-label {
+    width: 18vh;
+    padding: 11px 18px;
+    border-radius: 8px;
+    border: 1.3px solid var(--blues-gray-2, #B8BBC2);
+    background: var(--White, #FFF);
+}
+
+// ARTICLES // 
+.home__content {
+    margin: 0 146px;
+    &__more {
+        margin: 40px auto;
+    }
+}
+
+.home__content__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
