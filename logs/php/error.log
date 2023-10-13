@@ -301,3 +301,10 @@ Stack trace:
 [11-Oct-2023 23:30:37 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\home.php on line 49
 [11-Oct-2023 23:30:37 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\home.php on line 49
 [11-Oct-2023 23:30:37 UTC] PHP Warning:  Attempt to read property "name" on array in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\home.php on line 49
+[13-Oct-2023 21:24:17 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82

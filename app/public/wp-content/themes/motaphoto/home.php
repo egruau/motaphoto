@@ -53,18 +53,23 @@ if ($random_image) {
     </div>
     <select class="home__selection__sort filter-label">
         <option value="" disabled selected class="home__selection__sort__title">Trier par</option>
+        <option value="" class="">Des plus récentes aux plus anciennes</option>
+        <option value="" class="">Des plus anciennes aux plus récentes</option>
+        <
         <!-- TRI -->
     </select>
 </div>
 
 <div class="home__content">
     <?php
-$args = array(
+$custom_query = new WP_Query([
                 'post_type' => 'photo',
                 'posts_per_page' => 12,
-            );
+                'orderby' => 'date',
+                'order' => 'DESC',
+                'paged' => 1,
+            ]);
         
-            $custom_query = new WP_Query($args);
     ?>
     <div class="home__content__articles">
         <?php
@@ -83,7 +88,7 @@ $args = array(
 
 
     <button class="home__content__more submit-button">
-        Charger plus
+        Chargez plus
     </button>
 
 </div>

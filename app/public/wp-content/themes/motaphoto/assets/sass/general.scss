@@ -1,5 +1,4 @@
-$primaryFont:'Space Mono', monospace;
-$secondFont: 'Poppins', sans-serif;
+// sass --watch app/public/wp-content/themes/motaphoto/assets/sass:app/public/wp-content/themes/motaphoto/assets/css 
 
 html {
     line-height: 1.15; /* 1 */
@@ -9,7 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: $primaryFont;
+    font-family: 'Space Mono', monospace;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h3 {
 p {
     margin: 0;
     padding: 0;
-    font-family: $secondFont;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 14px;
 }

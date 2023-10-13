@@ -5,6 +5,7 @@ function enqueue_custom_styles() {
     wp_enqueue_style('motaphoto', get_stylesheet_uri());
 	wp_enqueue_style('allstyle', get_template_directory_uri() . '/assets/css/style.css');
 	wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('script-home', get_template_directory_uri() . '/assets/js/home.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
@@ -50,3 +51,41 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
     return false;
 } 
+
+
+// AJAX LOAD MORE
+
+function load_more_articles() {
+	$ajaxposts = new WP_Query([
+		'post_type' => 'photo',
+		'posts_per_page' => 12,
+		'orderby' => 'date',
+		'order' => 'DESC', 
+		'paged' => $_POST['paged'],
+	]);
+
+	$response ='';
+	$max_pages = $ajaxposts->max_num_pages;
+
+	if($ajaxposts->have_posts()) {
+		ob_start();
+		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+			$response .= get_template_part('templates-parts/photo_block');
+		endwhile;
+		$output = ob_get_contents();
+    	ob_end_clean();
+	} else {
+		$response = '';
+	}
+
+	$result = [
+		'max' => $max_pages,
+		'html' => $output,
+	];
+	
+	echo json_encode($result);
+	exit;
+}
+
+add_action('wp_ajax_load_more_articles', 'load_more_articles');
+add_action('wp_ajax_nopriv_load_more_articles', 'load_more_articles');
