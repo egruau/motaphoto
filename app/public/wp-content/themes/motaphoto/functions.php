@@ -123,3 +123,84 @@ function load_custom_posts() {
 
 add_action('wp_ajax_load_custom_posts', 'load_custom_posts');
 add_action('wp_ajax_nopriv_load_custom_posts', 'load_custom_posts');
+
+function load_categories_posts() {
+
+    $ajaxposts = new WP_Query([
+		'post_type' => 'photo',
+		'posts_per_page' => 12,
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'categories',
+				'field' => 'slug',
+				'terms' => $_POST['catgOption'],
+			),
+		),
+	]);
+
+	$response ='';
+
+	if($ajaxposts->have_posts()) {
+		ob_start();
+		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+			$response .= get_template_part('templates-parts/photo_block');
+		endwhile;
+		$output = ob_get_contents();
+    	ob_end_clean();
+	} else {
+		$response = '';
+	}
+
+	$result = [
+		'html' => $output,
+	];
+	
+	echo json_encode($result);
+	exit;
+}
+
+add_action('wp_ajax_load_categories_posts', 'load_categories_posts');
+add_action('wp_ajax_nopriv_load_categories_posts', 'load_categories_posts');
+
+
+function load_format_posts() {
+
+    $ajaxposts = new WP_Query([
+		'post_type' => 'photo',
+		'posts_per_page' => 12,
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'format',
+				'field' => 'slug',
+				'terms' => $_POST['formatOption'],
+			),
+		),
+	]);
+
+	$response ='';
+
+	if($ajaxposts->have_posts()) {
+		ob_start();
+		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+			$response .= get_template_part('templates-parts/photo_block');
+		endwhile;
+		$output = ob_get_contents();
+    	ob_end_clean();
+	} else {
+		$response = '';
+	}
+
+	$result = [
+		'html' => $output,
+	];
+	
+	echo json_encode($result);
+	exit;
+}
+
+add_action('wp_ajax_load_format_posts', 'load_format_posts');
+add_action('wp_ajax_nopriv_load_format_posts', 'load_format_posts');

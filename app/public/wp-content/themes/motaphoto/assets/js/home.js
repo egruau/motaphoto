@@ -50,3 +50,55 @@
         });
     });
 })(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+        $('.home__selection__filters__categories').on('change', function() {
+            
+
+            let catgOption = $(this).val();
+            console.log(catgOption);
+
+            $.ajax({
+                type: 'POST',
+                url:'/wp-admin/admin-ajax.php',
+                dataType: 'json',
+                data: {
+                    action: 'load_categories_posts',
+                    catgOption: catgOption,
+                },
+                success: function(res) {
+                    $('.home__content__articles').empty();
+                    $('.home__content__articles').append(res.html);
+                }
+            });
+
+        });
+    });
+})(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+        $('.home__selection__filters__formats').on('change', function() {
+            
+
+            let formatOption = $(this).val();
+            console.log(formatOption);
+
+            $.ajax({
+                type: 'POST',
+                url:'/wp-admin/admin-ajax.php',
+                dataType: 'json',
+                data: {
+                    action: 'load_format_posts',
+                    formatOption: formatOption,
+                },
+                success: function(res) {
+                    $('.home__content__articles').empty();
+                    $('.home__content__articles').append(res.html);
+                }
+            });
+
+        });
+    });
+})(jQuery);
