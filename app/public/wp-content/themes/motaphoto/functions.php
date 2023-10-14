@@ -89,3 +89,37 @@ function load_more_articles() {
 
 add_action('wp_ajax_load_more_articles', 'load_more_articles');
 add_action('wp_ajax_nopriv_load_more_articles', 'load_more_articles');
+
+
+function load_custom_posts() {
+
+    $ajaxposts = new WP_Query([
+		'post_type' => 'photo',
+		'posts_per_page' => 12,
+		'orderby' => 'date',
+		'order' => $_POST['sorting'],
+	]);
+
+	$response ='';
+
+	if($ajaxposts->have_posts()) {
+		ob_start();
+		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+			$response .= get_template_part('templates-parts/photo_block');
+		endwhile;
+		$output = ob_get_contents();
+    	ob_end_clean();
+	} else {
+		$response = '';
+	}
+
+	$result = [
+		'html' => $output,
+	];
+	
+	echo json_encode($result);
+	exit;
+}
+
+add_action('wp_ajax_load_custom_posts', 'load_custom_posts');
+add_action('wp_ajax_nopriv_load_custom_posts', 'load_custom_posts');

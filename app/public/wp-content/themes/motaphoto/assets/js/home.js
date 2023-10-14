@@ -24,3 +24,29 @@
         });
     });
 })(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+        $('.home__selection__sort').on('change', function() {
+            
+
+            let sortingOption = $(this).val();
+            console.log(sortingOption);
+
+            $.ajax({
+                type: 'POST',
+                url:'/wp-admin/admin-ajax.php',
+                dataType: 'json',
+                data: {
+                    action: 'load_custom_posts',
+                    sorting: sortingOption,
+                },
+                success: function(res) {
+                    $('.home__content__articles').empty();
+                    $('.home__content__articles').append(res.html);
+                }
+            });
+
+        });
+    });
+})(jQuery);

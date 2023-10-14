@@ -308,3 +308,4 @@ Stack trace:
 [13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
 [13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
 [13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
+[14-Oct-2023 21:35:10 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 83

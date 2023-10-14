@@ -53,8 +53,8 @@ if ($random_image) {
     </div>
     <select class="home__selection__sort filter-label">
         <option value="" disabled selected class="home__selection__sort__title">Trier par</option>
-        <option value="" class="">Des plus récentes aux plus anciennes</option>
-        <option value="" class="">Des plus anciennes aux plus récentes</option>
+        <option value="DESC" class="">Des plus récentes aux plus anciennes</option>
+        <option value="ASC" class="">Des plus anciennes aux plus récentes</option>
         <
         <!-- TRI -->
     </select>
