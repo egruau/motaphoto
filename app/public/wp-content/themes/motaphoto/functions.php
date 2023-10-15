@@ -90,15 +90,58 @@ function load_more_articles() {
 add_action('wp_ajax_load_more_articles', 'load_more_articles');
 add_action('wp_ajax_nopriv_load_more_articles', 'load_more_articles');
 
+function load_posts() {
+	// $sorting = $_POST['sorting'];
+	// $catgOption = $_POST['catgOption'];
+	// $formatOption = $_POST['formatOption'];
 
-function load_custom_posts() {
+	// $ajaxposts = new WP_Query([
+	// 	'post_type' => 'photo',
+	// 	'posts_per_page' => 12,
+	// 	'orderby' => 'date',
+	// 	'order' => $sorting,
+	// 	'tax_query' => array(
+	// 		// 'relation' => 'AND',
+	// 		array(
+	// 			'taxonomy' => 'categories',
+	// 			'field' => 'slug',
+	// 			'terms' => $catgOption,
+	// 		),
+	// 		array(
+	// 			'taxonomy' => 'format',
+	// 			'field' => 'slug',
+	// 			'terms' => $formatOption,
+	// 		),
+	// 	),
+	// ]);
+	$sorting = $_POST['sorting'];
+    $catgOption = $_POST['catgOption'];
+    $formatOption = $_POST['formatOption'];
 
-    $ajaxposts = new WP_Query([
-		'post_type' => 'photo',
-		'posts_per_page' => 12,
-		'orderby' => 'date',
-		'order' => $_POST['sorting'],
-	]);
+    $args = array(
+        'post_type' => 'photo',
+        'posts_per_page' => 12,
+        'orderby' => 'date',
+        'order' => $sorting,
+    );
+
+    if (!empty($catgOption)) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'categories',
+            'field' => 'slug',
+            'terms' => $catgOption,
+        );
+    }
+
+    if (!empty($formatOption)) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'format',
+            'field' => 'slug',
+            'terms' => $formatOption,
+        );
+    }
+
+    $ajaxposts = new WP_Query($args);
 
 	$response ='';
 
@@ -107,10 +150,12 @@ function load_custom_posts() {
 		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
 			$response .= get_template_part('templates-parts/photo_block');
 		endwhile;
-		$output = ob_get_contents();
-    	ob_end_clean();
+		// $output = ob_get_contents();
+    	// ob_end_clean();
+		$output = ob_get_clean();
 	} else {
-		$response = '';
+		// $response = '';
+		$output = ''; 
 	}
 
 	$result = [
@@ -121,86 +166,119 @@ function load_custom_posts() {
 	exit;
 }
 
-add_action('wp_ajax_load_custom_posts', 'load_custom_posts');
-add_action('wp_ajax_nopriv_load_custom_posts', 'load_custom_posts');
+add_action('wp_ajax_load_posts', 'load_posts');
+add_action('wp_ajax_nopriv_load_posts', 'load_posts');
 
-function load_categories_posts() {
+// function load_custom_posts() {
 
-    $ajaxposts = new WP_Query([
-		'post_type' => 'photo',
-		'posts_per_page' => 12,
-		'orderby' => 'date',
-		'order' => 'DESC',
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'categories',
-				'field' => 'slug',
-				'terms' => $_POST['catgOption'],
-			),
-		),
-	]);
+//     $ajaxposts = new WP_Query([
+// 		'post_type' => 'photo',
+// 		'posts_per_page' => 12,
+// 		'orderby' => 'date',
+// 		'order' => $_POST['sorting'],
+// 	]);
 
-	$response ='';
+// 	$response ='';
 
-	if($ajaxposts->have_posts()) {
-		ob_start();
-		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-			$response .= get_template_part('templates-parts/photo_block');
-		endwhile;
-		$output = ob_get_contents();
-    	ob_end_clean();
-	} else {
-		$response = '';
-	}
+// 	if($ajaxposts->have_posts()) {
+// 		ob_start();
+// 		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+// 			$response .= get_template_part('templates-parts/photo_block');
+// 		endwhile;
+// 		$output = ob_get_contents();
+//     	ob_end_clean();
+// 	} else {
+// 		$response = '';
+// 	}
 
-	$result = [
-		'html' => $output,
-	];
+// 	$result = [
+// 		'html' => $output,
+// 	];
 	
-	echo json_encode($result);
-	exit;
-}
+// 	echo json_encode($result);
+// 	exit;
+// }
 
-add_action('wp_ajax_load_categories_posts', 'load_categories_posts');
-add_action('wp_ajax_nopriv_load_categories_posts', 'load_categories_posts');
+// add_action('wp_ajax_load_custom_posts', 'load_custom_posts');
+// add_action('wp_ajax_nopriv_load_custom_posts', 'load_custom_posts');
 
+// function load_categories_posts() {
 
-function load_format_posts() {
+//     $ajaxposts = new WP_Query([
+// 		'post_type' => 'photo',
+// 		'posts_per_page' => 12,
+// 		'orderby' => 'date',
+// 		'order' => 'DESC',
+// 		'tax_query' => array(
+// 			array(
+// 				'taxonomy' => 'categories',
+// 				'field' => 'slug',
+// 				'terms' => $_POST['catgOption'],
+// 			),
+// 		),
+// 	]);
 
-    $ajaxposts = new WP_Query([
-		'post_type' => 'photo',
-		'posts_per_page' => 12,
-		'orderby' => 'date',
-		'order' => 'DESC',
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'format',
-				'field' => 'slug',
-				'terms' => $_POST['formatOption'],
-			),
-		),
-	]);
+// 	$response ='';
 
-	$response ='';
+// 	if($ajaxposts->have_posts()) {
+// 		ob_start();
+// 		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+// 			$response .= get_template_part('templates-parts/photo_block');
+// 		endwhile;
+// 		$output = ob_get_contents();
+//     	ob_end_clean();
+// 	} else {
+// 		$response = '';
+// 	}
 
-	if($ajaxposts->have_posts()) {
-		ob_start();
-		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-			$response .= get_template_part('templates-parts/photo_block');
-		endwhile;
-		$output = ob_get_contents();
-    	ob_end_clean();
-	} else {
-		$response = '';
-	}
-
-	$result = [
-		'html' => $output,
-	];
+// 	$result = [
+// 		'html' => $output,
+// 	];
 	
-	echo json_encode($result);
-	exit;
-}
+// 	echo json_encode($result);
+// 	exit;
+// }
 
-add_action('wp_ajax_load_format_posts', 'load_format_posts');
-add_action('wp_ajax_nopriv_load_format_posts', 'load_format_posts');
+// add_action('wp_ajax_load_categories_posts', 'load_categories_posts');
+// add_action('wp_ajax_nopriv_load_categories_posts', 'load_categories_posts');
+
+
+// function load_format_posts() {
+
+//     $ajaxposts = new WP_Query([
+// 		'post_type' => 'photo',
+// 		'posts_per_page' => 12,
+// 		'orderby' => 'date',
+// 		'order' => 'DESC',
+// 		'tax_query' => array(
+// 			array(
+// 				'taxonomy' => 'format',
+// 				'field' => 'slug',
+// 				'terms' => $_POST['formatOption'],
+// 			),
+// 		),
+// 	]);
+
+// 	$response ='';
+
+// 	if($ajaxposts->have_posts()) {
+// 		ob_start();
+// 		while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+// 			$response .= get_template_part('templates-parts/photo_block');
+// 		endwhile;
+// 		$output = ob_get_contents();
+//     	ob_end_clean();
+// 	} else {
+// 		$response = '';
+// 	}
+
+// 	$result = [
+// 		'html' => $output,
+// 	];
+	
+// 	echo json_encode($result);
+// 	exit;
+// }
+
+// add_action('wp_ajax_load_format_posts', 'load_format_posts');
+// add_action('wp_ajax_nopriv_load_format_posts', 'load_format_posts');

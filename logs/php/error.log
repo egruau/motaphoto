@@ -309,3 +309,77 @@ Stack trace:
 [13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
 [13-Oct-2023 21:24:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 82
 [14-Oct-2023 21:35:10 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 83
+[15-Oct-2023 00:11:51 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:11:54 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:11:55 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:11:57 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:12:02 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:12:52 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:13:14 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:13:28 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 167
+[15-Oct-2023 00:13:31 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:13:36 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:14:09 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 107
+[15-Oct-2023 00:42:02 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:42:10 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:45:06 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:45:15 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:45:26 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:45:32 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:46:22 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:46:30 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:46:33 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:49:26 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:49:28 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:49:30 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:49:33 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:49:39 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:50:11 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:50:16 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:50:21 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 00:50:23 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:04:16 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:04:37 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:04:39 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:10:56 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:11:03 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:11:05 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:11:12 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:11:57 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:12:00 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:12:09 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:12:19 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:12:21 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:12:36 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:14:11 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:14:22 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:14:32 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:14:37 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:14:42 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:16:34 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:20:57 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 146
+[15-Oct-2023 01:23:45 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 146
+[15-Oct-2023 01:24:38 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 146
+[15-Oct-2023 01:27:12 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 146
+[15-Oct-2023 01:31:10 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:31:10 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:31:18 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:31:18 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:31:23 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:31:23 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:31:31 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:31:31 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:32:16 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:32:16 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:32:22 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:32:22 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:32:24 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:32:24 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:32:29 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:32:29 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:34:45 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:34:45 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 149
+[15-Oct-2023 01:39:26 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:39:26 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[15-Oct-2023 01:42:59 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
+[15-Oct-2023 01:42:59 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
