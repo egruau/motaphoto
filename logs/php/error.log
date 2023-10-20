@@ -383,3 +383,9 @@ Stack trace:
 [15-Oct-2023 01:39:26 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
 [15-Oct-2023 01:42:59 UTC] PHP Warning:  Undefined array key "$formatOption" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 96
 [15-Oct-2023 01:42:59 UTC] PHP Warning:  Undefined variable $output in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 131
+[17-Oct-2023 19:13:31 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 211
+[17-Oct-2023 19:15:54 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 152
+[17-Oct-2023 19:16:25 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 152
+[17-Oct-2023 19:16:30 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 152
+[17-Oct-2023 19:16:35 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 211
+[17-Oct-2023 19:16:37 UTC] PHP Warning:  Undefined array key "nbArticles" in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-content\themes\motaphoto\functions.php on line 211

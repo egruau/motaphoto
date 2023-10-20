@@ -27,7 +27,7 @@ function closeMenu() {
 // GESTION DE LA MODALE //
 document.addEventListener('wpcf7submit', function(event) {
   // Code pour agrandir la modale à l'envoie du formulaire
-  var modal = document.getElementById('modal-content');
+  const modal = document.getElementById('modal-content');
   modal.style.height = '900px';
 }, false);
 
