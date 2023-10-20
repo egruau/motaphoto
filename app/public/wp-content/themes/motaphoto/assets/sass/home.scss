@@ -16,37 +16,41 @@
     background-repeat: no-repeat;
 }
 
-// TRI ET FILTRES // 
-.home__selection {
-    margin: 80px 146px 39px 146px;
-    display: flex;
-    justify-content: space-between;
-    &__filters {
-        display: flex;
-        justify-content: space-between;
-        width: calc(50% - 20px);
-    }
-}
-
-.filter-label {
-    width: 18vh;
-    padding: 11px 18px;
-    border-radius: 8px;
-    border: 1.3px solid var(--blues-gray-2, #B8BBC2);
-    background: var(--White, #FFF);
-}
-
-// ARTICLES // 
+// CONTENU DE LA PAGE // 
 .home__content {
     margin: 0 146px;
-    &__more {
-        margin: 40px auto;
+}
+
+// TRI ET FILTRES // 
+
+.home__content__selection__filters__content__option {
+    &:hover {
+    background-color: #FFD6D6; /* Couleur au survol */
+    }
+
+    .clicked-option {
+    background-color: #FE5858; /* Couleur au clic enfoncé */
+    color: #fff;
+    }
+
+    .selected {
+    background-color: #E00000; /* Couleur pour l'option sélectionnée */
+    color: #fff;
     }
 }
 
+
+// ARTICLES //
 .home__content__articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 40px;
+}
+
+.home__content__more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }

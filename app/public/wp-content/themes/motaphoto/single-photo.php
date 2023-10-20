@@ -42,6 +42,7 @@ get_header();
             <div class="single-post-content__photo__picture">
                 <img class="single-post-content__photo__picture__img" src="<?php the_post_thumbnail_url(); ?>" alt="">
             </div>
+            
         </div>
         <div class="single-post-content__footer">
             <div class="single-post-content__footer__contact">

@@ -2,6 +2,7 @@
 </main>
 <footer class="footer">
    <?php get_template_part('templates-parts/modale', 'contact'); ?>
+   <?php get_template_part('templates-parts/lightbox', 'lightbox'); ?>
     <?php
  if ( has_nav_menu( 'footer-menu' ) ) : ?>
     <?php 
