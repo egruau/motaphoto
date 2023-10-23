@@ -56,30 +56,30 @@ function wpcf7_autop_return_false() {
 
 // Ajout des articles de la page d'accueil
 function load_initial_articles() {
-    $sorting = $_POST['sorting'];
-    $catgOption = $_POST['catgOption'];
-    $formatOption = $_POST['formatOption'];
+    $dateOrderSelected = $_POST['dateOrderSelected'];
+    $catgSelected = $_POST['catgSelected'];
+    $formatSelected = $_POST['formatSelected'];
 
     $args = array(
         'post_type' => 'photo',
         'posts_per_page' => 12,
         'orderby' => 'date',
-        'order' => $sorting,
+        'order' => $dateOrderSelected,
     );
 
-    if (!empty($catgOption)) {
+    if (!empty($catgSelected)) {
         $args['tax_query'][] = array(
             'taxonomy' => 'categories',
             'field' => 'slug',
-            'terms' => $catgOption,
+            'terms' => $catgSelected,
         );
     }
 
-    if (!empty($formatOption)) {
+    if (!empty($formatSelected)) {
         $args['tax_query'][] = array(
             'taxonomy' => 'format',
             'field' => 'slug',
-            'terms' => $formatOption,
+            'terms' => $formatSelected,
         );
     }
 
@@ -114,31 +114,31 @@ add_action('wp_ajax_nopriv_load_initial_articles', 'load_initial_articles');
 // Fonction pour charger plus d'articles
 function load_more_articles() {
     $paging = $_POST['paged'];
-    $sorting = $_POST['sorting'];
-    $catgOption = $_POST['catgOption'];
-    $formatOption = $_POST['formatOption'];
+    $dateOrderSelected = $_POST['dateOrderSelected'];
+    $catgSelected = $_POST['catgSelected'];
+    $formatSelected = $_POST['formatSelected'];
 
     $args = array(
         'post_type' => 'photo',
         'posts_per_page' => 12,
         'orderby' => 'date',
-        'order' => $sorting,
+        'order' => $dateOrderSelected,
         'paged' => $paging,
     );
 
-    if (!empty($catgOption)) {
+    if (!empty($catgSelected)) {
         $args['tax_query'][] = array(
             'taxonomy' => 'categories',
             'field' => 'slug',
-            'terms' => $catgOption,
+            'terms' => $catgSelected,
         );
     }
 
-    if (!empty($formatOption)) {
+    if (!empty($formatSelected)) {
         $args['tax_query'][] = array(
             'taxonomy' => 'format',
             'field' => 'slug',
-            'terms' => $formatOption,
+            'terms' => $formatSelected,
         );
     }
 
