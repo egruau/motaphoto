@@ -1,9 +1,5 @@
 // ATTENTION PAS DE LIGHTBOX EN MOBILE // 
 
-.footer__nav {
-    display: none;
-}
-
 .lightbox {
     display: none;
     flex-direction: row;
@@ -16,6 +12,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 10;
+    &-open {
+        display: flex;
+    }
 }
 
 .lightbox__next,
@@ -23,7 +22,7 @@
     background-color: initial;
     border: none;
     padding: initial;
-    cursor: pointer;
+    cursor: pointer; 
     transition: .3s;
     color: #ffff;
     display: flex;
@@ -65,4 +64,8 @@
 .lightbox__container__infos {
     display: flex;
     justify-content: space-between;
+}
+
+.hide {
+    display: none;
 }

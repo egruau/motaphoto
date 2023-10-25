@@ -51,8 +51,12 @@
     align-items: end;
     &__fullscreen {
         cursor: pointer;
-        padding-top: 12px;
-        padding-right: 18px;
+        margin-top: 12px;
+        margin-right: 18px;
+        background-image: url("../images/fullscreen.svg");
+        background-size: cover;
+        width: 34px;
+        height: 34px;
     }
     &__view {
         margin: auto;

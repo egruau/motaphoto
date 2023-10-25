@@ -27,7 +27,6 @@
                     formatSelected: formatSelected,
                 },
                 success: function (res) {
-                    console.log(res);
                     $('.home__content__articles').empty();
                     $('.home__content__articles').append(res.html);
                     currentPage = 1;

@@ -40,7 +40,6 @@ btnContact.onclick = function() {
 }
 // Intégrer la référence photo //
 let btnContactPhoto = $('.single-post-content__footer__contact__button');
-console.log(btnContactPhoto);
 btnContactPhoto.click(function() {
   $(document).ready(function() {
     $("#form__ref-photo").val($('#reference-photo').text())

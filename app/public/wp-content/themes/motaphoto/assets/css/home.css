@@ -2,6 +2,11 @@
 .home__content {
   margin: 100px 146px 0 146px;
 }
+@media screen and (max-width: 1024px) {
+  .home__content {
+    margin: 100px 0 0 0;
+  }
+}
 
 .home__hero {
   display: flex;
@@ -26,10 +31,26 @@
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .home__content__selection {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: 20px;
+    height: 100%;
+    padding-top: 10px;
+    gap: 9px;
+  }
+}
 .home__content__selection__filters {
   display: flex;
   justify-content: space-between;
   width: calc(50% - 10px);
+}
+@media screen and (max-width: 1024px) {
+  .home__content__selection__filters {
+    width: initial;
+    gap: 9px;
+  }
 }
 
 .home__filter {
@@ -138,6 +159,11 @@
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .home__content__articles {
+    margin: 0 20px 40px 20px;
+  }
 }
 
 .home__content__more {

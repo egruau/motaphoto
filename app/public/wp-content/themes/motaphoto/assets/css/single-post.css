@@ -42,8 +42,15 @@
   font-family: "Space Mono", monospace;
 }
 .single-post-content__photo__picture {
+  position: relative;
   flex: 1;
   align-self: end;
+}
+.single-post-content__photo__picture:hover .photo-block__hover {
+  opacity: 1;
+}
+.single-post-content__photo__picture:hover .photo-block__hover .fullscreen-hide {
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .single-post-content__photo__picture {

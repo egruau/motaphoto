@@ -1,42 +1,86 @@
-
 $(document).ready(function () {
 
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImg = document.querySelector('.lightbox__container__img');
+    const lightboxCatg = document.getElementById('lightboxCatg');
+    const lightboxRef = document.getElementById('lightboxRef');
+    const arrowPrev = document.querySelector('.lightbox__prev');
+    const arrowNext = document.querySelector('.lightbox__next');
+
+    index = 0;
+    let data = null;
+
+    function closeLightbox() {
+        const closeBtn = document.querySelector('.lightbox__close');
+        closeBtn.addEventListener('click', function () {
+            lightbox.classList.remove('lightbox-open');
+        });
+    };
+    closeLightbox();
+
     function openLightbox() {
-        $('.lightbox').css('display', 'flex');
+        lightbox.classList.add('lightbox-open');
     }
 
-    $('window').on('load', '.photo-block-container', function() {
-        const container = $('.photo-block-container');
-        console.log(container);
-        console.log('La fonction est chargée');
+    document.body.addEventListener('click', function (event) {
+        if (event.target.classList.contains('photo-block__hover__fullscreen') || event.target.closest('.photo-block__hover__fullscreen')) {
+            event.preventDefault();
+            const target = event.target;
+            console.log(target);
+            const links = Array.from(document.querySelectorAll('.photo-block__hover'));
+            data = links.map(link => {
+                const imgFullscreen = link.querySelector('.photo-block__hover__fullscreen');
+                const imgSrc = link.querySelector('.photo-block__hover__fullscreen').getAttribute('href');
+                const imgRef = link.querySelector('.photo-block__hover__infos__ref').textContent;
+                const imgCatg = link.querySelector('.photo-block__hover__infos__categorie').textContent;
 
-    });
+                return {
+                    imgFullscreen,
+                    imgSrc,
+                    imgRef,
+                    imgCatg
+                };
+            });
 
-    // Utilisez une délégation d'événements sur le body pour les éléments .photo-block__hover__fullscreen
-    $('body').on('click', '.photo-block__hover__fullscreen', function () {
-        const container = $(this).closest('.photo-block-container');
-
-        if (container.length > 0) {
-            const imgSrc = container.find('.photo-block__picture__img').attr('src');
-            const reference = container.find('.photo-block__hover__infos__ref').text();
-            const categorie = container.find('.photo-block__hover__infos__categorie').text();
-
-            $('.lightbox__container__img').attr('src', imgSrc);
-            $('.lightbox__container__infos__ref').text(reference);
-            $('.lightbox__container__infos__catg').text(categorie);
-
-            openLightbox();
+            index = data.findIndex(item => item.imgFullscreen === target);
+            updateLightbox();
         }
+
     });
 
+
+    function updateLightbox() {
+        updateIndex();
+        lightboxImg.setAttribute('src', data[index].imgSrc);
+        lightboxRef.innerHTML = data[index].imgRef;
+        lightboxCatg.innerHTML = data[index].imgCatg;
+        console.log(lightbox.innerHTML);
+        openLightbox();
+    }
+
+    function updateIndex() {
+        if (index === 0) {
+            arrowPrev.classList.add('hide');
+        } else {
+            arrowPrev.classList.remove('hide');
+        }
+
+        if (index === data.length - 1) {
+            arrowNext.classList.add('hide');
+        } else {
+            arrowNext.classList.remove('hide');
+        }
+    }
+
+        arrowPrev.addEventListener('click', () => {
+            index--;
+            updateLightbox();
+        });
+        arrowNext.addEventListener('click', ()=> {
+            index++;
+            updateLightbox();
+        });
+        
+    
 
 });
-
-function closeLightbox() {
-    const closeBtn = $('.lightbox__close');
-
-    closeBtn.click(function() {
-        $('.lightbox').css('display', 'none');
-    });
-};
-closeLightbox();

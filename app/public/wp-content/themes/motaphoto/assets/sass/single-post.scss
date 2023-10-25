@@ -36,8 +36,17 @@
         @media screen and (max-width: 1024px) {}
     }
     &__picture {
+        position: relative;
         flex: 1;
         align-self: end;
+        &:hover {
+        .photo-block__hover {
+            opacity: 1;
+            .fullscreen-hide {
+                display: none;
+            }
+        }
+        }
         @media screen and (max-width: 1024px) {
             align-self: initial;
         }

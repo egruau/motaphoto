@@ -41,6 +41,7 @@ get_header();
             </div>
             <div class="single-post-content__photo__picture">
                 <img class="single-post-content__photo__picture__img" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                <?php get_template_part('templates-parts/photo-hover', 'hover');?>
             </div>
             
         </div>
