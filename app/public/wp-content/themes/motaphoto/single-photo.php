@@ -40,8 +40,10 @@ get_header();
                 <p class="single-post-content__photo__infos__txt"> année : <?php echo get_the_time('Y'); ?></p>
             </div>
             <div class="single-post-content__photo__picture">
-                <img class="single-post-content__photo__picture__img" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                <div class="single-post-content__photo__picture__content">
+                <img id="singlePhoto" class="single-post-content__photo__picture__img" src="<?php the_post_thumbnail_url(); ?>" alt="">
                 <?php get_template_part('templates-parts/photo-hover', 'hover');?>
+                </div>
             </div>
             
         </div>
@@ -132,7 +134,7 @@ get_header();
             }
             ?>
         </div>
-        <button class="single-post-content__related-post__button submit-button"> Toutes les photos</button>
+        <button class="single-post-content__related-post__button submit-button"><a href="http://motaphoto.local/">Toutes les photos</a></button>
     </div>
 </div>
 

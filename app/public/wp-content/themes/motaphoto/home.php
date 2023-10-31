@@ -14,7 +14,7 @@ if ($random_image) {
 }
 ?>
 
-<div class="home__hero hero-background" style="background-image: url('<?php echo $thumbnail_url ?>');">
+<div id="home" class="home__hero hero-background" style="background-image: url('<?php echo $thumbnail_url ?>');">
     <h1 class="home__hero__title">Photographe Event</h1>
 </div>
 

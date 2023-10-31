@@ -1,5 +1,6 @@
 (function ($) {
     $(document).ready(function () {
+        console.log('le script home est chargé');
     
         let isMouseDown = false; // variable pour le clic maintenu
 
@@ -26,7 +27,6 @@
                     catgSelected: catgSelected,
                     formatSelected: formatSelected,
                 },
-                success: function (res) {
                 success: function (res) {
                     $('.home__content__articles').empty();
                     $('.home__content__articles').append(res.html);

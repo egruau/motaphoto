@@ -1,7 +1,8 @@
 .home__content {
     margin: 100px 146px 0 146px;
     @media screen and (max-width: 1024px) {
-        margin: 100px 0 0 0;
+        position: relative;
+        margin: 130px 0 0 0;
     }
 }
 
@@ -14,6 +15,10 @@
     &__title {
         color: transparent;
         -webkit-text-stroke: 2px #ffff;
+        @media screen and (max-width: 1024px) {
+            font-size: 2.5rem;
+            text-align: center;
+        }
     }
 }
 
@@ -33,7 +38,9 @@
     justify-content: space-between;
     margin-bottom: 40px;
     @media screen and (max-width: 1024px) {
-        overflow-y: hidden;
+        position: absolute;
+        bottom: 35px;
+        width: calc(100% - 20px);
         overflow-x: scroll;
         margin-left: 20px;
         height: 100%;
@@ -120,7 +127,6 @@
         user-select: none;
         position: relative;
         box-sizing: border-box;
-        border-top: 1.3px solid #215AFF;
         width: 100%;
         border-radius: 0px 0px 8px 8px;
         background: white;
@@ -147,7 +153,11 @@
         padding: 11px 24px;
         cursor: pointer;
         strong {
-            font-weight: normal;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.36px;
+
         }
         &:hover {
             background: #FFD6D6;
@@ -165,6 +175,7 @@ border-radius: 0px 0px 8px 8px;
 
 .home__filter__content__list__option.clicked-option {
     background: #FE5858;
+    color: #313144;
 }
 
 

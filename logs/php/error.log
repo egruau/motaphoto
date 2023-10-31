@@ -500,3 +500,5 @@ Stack trace:
 [22-Oct-2023 19:47:43 UTC] ASC
 [22-Oct-2023 19:47:43 UTC] 
 [22-Oct-2023 19:47:43 UTC] 
+[27-Oct-2023 20:36:36 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[27-Oct-2023 21:32:08 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\gruau\Documents\Openclassroom\motaphoto\app\public\wp-includes\class-wp-customize-widgets.php on line 905
