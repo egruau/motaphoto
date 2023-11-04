@@ -51,6 +51,9 @@ h2 {
     font-size: 66px;
     font-style: italic;
     font-weight: 400;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
 }
 
 h3 {
@@ -92,5 +95,8 @@ li {
         background-color: black;
         font-weight: 700;
         color: white;
+        a {
+        color: white;
+        }
     }
 }

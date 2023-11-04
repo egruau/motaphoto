@@ -26,7 +26,6 @@
             &__title {
                 margin: initial;
                 margin-top: 20px;
-                font-size: 46px;
             }
         }
         &__txt {
@@ -48,6 +47,7 @@
             object-fit: contain;
             max-height: calc(100vh - 250px);
             display: block;
+            width: 100%;
             @media screen and (max-width: 768px) {
                 max-height: calc(100vh - 140px);
             }

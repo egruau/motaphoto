@@ -27,9 +27,25 @@
     align-items: center;
     gap: 5px;
     margin: 0 20px;
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 10px;
+    }
     .lightbox__arrow-hover {
         display: none;
     } 
+}
+
+.lightbox__next {
+    @media screen and (max-width: 768px) {
+        right: 0;
+    }
+}
+
+.lightbox__prev {
+    @media screen and (max-width: 768px) {
+        left: 0;
+    }
 }
 
 .lightbox__next:hover,
@@ -59,6 +75,9 @@
     height: calc(100vh - 60px);
     color: white;
     gap: 10px;
+    @media screen and (max-width: 768px) {
+        margin: 0 10px;
+    }
 }
 
 .lightbox__container__img {

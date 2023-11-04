@@ -34,7 +34,6 @@
   .single-post-content__photo__infos__title {
     margin: initial;
     margin-top: 20px;
-    font-size: 46px;
   }
 }
 .single-post-content__photo__infos__txt {
@@ -57,6 +56,7 @@
   object-fit: contain;
   max-height: calc(100vh - 250px);
   display: block;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .single-post-content__photo__picture__img {

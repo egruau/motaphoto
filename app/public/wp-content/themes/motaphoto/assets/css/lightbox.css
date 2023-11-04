@@ -28,9 +28,28 @@
   gap: 5px;
   margin: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .lightbox__next,
+  .lightbox__prev {
+    position: absolute;
+    bottom: 10px;
+  }
+}
 .lightbox__next .lightbox__arrow-hover,
 .lightbox__prev .lightbox__arrow-hover {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox__next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox__prev {
+    left: 0;
+  }
 }
 
 .lightbox__next:hover,
@@ -62,6 +81,11 @@
   height: calc(100vh - 60px);
   color: white;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .lightbox__container {
+    margin: 0 10px;
+  }
 }
 
 .lightbox__container__img {

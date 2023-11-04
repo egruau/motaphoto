@@ -51,6 +51,11 @@ h2 {
   font-style: italic;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+}
 
 h3 {
   font-size: 18px;
@@ -90,6 +95,9 @@ li {
 .submit-button:hover {
   background-color: black;
   font-weight: 700;
+  color: white;
+}
+.submit-button:hover a {
   color: white;
 }
 
@@ -682,7 +690,6 @@ li {
   .single-post-content__photo__infos__title {
     margin: initial;
     margin-top: 20px;
-    font-size: 46px;
   }
 }
 .single-post-content__photo__infos__txt {
@@ -705,6 +712,7 @@ li {
   object-fit: contain;
   max-height: calc(100vh - 250px);
   display: block;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .single-post-content__photo__picture__img {
@@ -979,9 +987,28 @@ li {
   gap: 5px;
   margin: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .lightbox__next,
+  .lightbox__prev {
+    position: absolute;
+    bottom: 10px;
+  }
+}
 .lightbox__next .lightbox__arrow-hover,
 .lightbox__prev .lightbox__arrow-hover {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox__next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox__prev {
+    left: 0;
+  }
 }
 
 .lightbox__next:hover,
@@ -1013,6 +1040,11 @@ li {
   height: calc(100vh - 60px);
   color: white;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .lightbox__container {
+    margin: 0 10px;
+  }
 }
 
 .lightbox__container__img {
